@@ -15,14 +15,16 @@ MonoBehaviour:
   - {fileID: 114187660737735480}
   - {fileID: 114366293618764164}
   EditorEvents:
-  - {fileID: 114215730920832094}
-  - {fileID: 114089948205873938}
-  - {fileID: 114811590170520210}
   - {fileID: 114716028919374556}
   - {fileID: 114956259194212478}
+  - {fileID: 114791439845301444}
+  - {fileID: 114431033190385980}
+  - {fileID: 114306853615953398}
+  - {fileID: 114415451439506744}
+  - {fileID: 114823748725824324}
   MasterBankRef: {fileID: 114366293618764164}
   StringsBankRef: {fileID: 114187660737735480}
-  stringsBankWriteTime: 636703066571437883
+  stringsBankWriteTime: 636703941649479763
   cacheVersion: 2
 --- !u!114 &114089948205873938
 MonoBehaviour:
@@ -37,8 +39,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/Music_Menu
   guid: 3c979abb3c5cbf4f855ebf2ce340be40
-  Banks:
-  - {fileID: 114366293618764164}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -58,11 +59,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FmodAssets\Desktop\Master Bank.strings.bank
-  lastModified: 636703066571437883
+  lastModified: 636703941649479763
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 940
+    Value: 1006
   Exists: 1
 --- !u!114 &114215730920832094
 MonoBehaviour:
@@ -77,8 +78,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/Music_Map
   guid: 0c357a572991734da767e5e09934f0f0
-  Banks:
-  - {fileID: 114366293618764164}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -86,6 +86,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 65985
+--- !u!114 &114306853615953398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Beach
+  guid: 5a0072383fd987489f2023db45a83a2e
+  Banks:
+  - {fileID: 114366293618764164}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 155666
 --- !u!114 &114366293618764164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,12 +121,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Q:\Users\LY\Documents\FOT_WORKVERSION\FOT_Version_LY\FmodAssets\Desktop\Master
     Bank.bank
-  lastModified: 636703066571377826
+  lastModified: 636703941649419703
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 9588672
+    Value: 9589888
   Exists: 1
+--- !u!114 &114415451439506744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Market
+  guid: b38a07bf7f691c42881bc159e0d34e33
+  Banks:
+  - {fileID: 114366293618764164}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114431033190385980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Menu
+  guid: 3c979abb3c5cbf4f855ebf2ce340be40
+  Banks:
+  - {fileID: 114366293618764164}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 174009
 --- !u!114 &114716028919374556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,6 +193,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 6229
+--- !u!114 &114791439845301444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Hub
+  guid: 0c357a572991734da767e5e09934f0f0
+  Banks:
+  - {fileID: 114366293618764164}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 65985
 --- !u!114 &114811590170520210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,8 +228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/Music_Beach
   guid: 5a0072383fd987489f2023db45a83a2e
-  Banks:
-  - {fileID: 114366293618764164}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -149,6 +236,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 155666
+--- !u!114 &114823748725824324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Park
+  guid: d8aeddf391423d46b7cf5f85d04f4320
+  Banks:
+  - {fileID: 114366293618764164}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114956259194212478
 MonoBehaviour:
   m_ObjectHideFlags: 0

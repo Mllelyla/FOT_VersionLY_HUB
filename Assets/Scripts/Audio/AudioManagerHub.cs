@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
+
 
 public class AudioManagerHub : MonoBehaviour
 
@@ -18,14 +18,18 @@ public class AudioManagerHub : MonoBehaviour
     public string SFXMapUncover;
     public FMOD.Studio.EventInstance MapSnd;
 
-    [Header("Music")]
+    [Header("Hub Music")]
     [FMODUnity.EventRef]
     public string MusicEvent;
     public FMOD.Studio.EventInstance SceneMusic;
     
     [Header("Transition to Menu")]
     public AudioManagerMenu AudioMenu;
-       
+
+    [Header("TEST Transition to Scene")]
+    public AudioTransitionToScene AudioTransition;
+
+
     void Start()
     {
         BackMenuBtn.onClick.AddListener(BackBtnSound);
@@ -36,7 +40,7 @@ public class AudioManagerHub : MonoBehaviour
     {
         BackBtnSnd = FMODUnity.RuntimeManager.CreateInstance(SFXBackButton);
         BackBtnSnd.start();
-
+        Debug.Log("Audio: Transition To Menu Music");
         StopMusicFade(); //stop hub music
         AudioMenu.PlayMusic(); //start menu music
     }
@@ -58,7 +62,10 @@ public class AudioManagerHub : MonoBehaviour
     /// ----- MUSIC STOP -----///
     void OnDestroy() //crude alternative while the custom button isnt working
     {
+        Debug.Log(" Audio: TEST - Transition To Scene Music (this is temporary OnDestroy)");
         StopMusicFade();
+        // --- TEST ---- //
+        AudioTransition.Beach.PlayMusic();
     }
 
     public void StopMusicFade()

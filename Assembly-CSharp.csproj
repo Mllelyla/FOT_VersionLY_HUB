@@ -119,10 +119,10 @@
      <Compile Include="Assets\Scripts\_MainMenu\Hub.cs" />
      <Compile Include="Assets\Scripts\_MainMenu\MainMenu.cs" />
      <Compile Include="Assets\Scripts\_MainMenu\MoveCloud.cs" />
-     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Audio\AudioManagerHub.cs" />
      <Compile Include="Assets\Scripts\Audio\AudioManagerMenu.cs" />
-     <Compile Include="Assets\Scripts\Audio\AudioTransitions.cs" />
+     <Compile Include="Assets\Scripts\Audio\AudioMusicScene.cs" />
+     <Compile Include="Assets\Scripts\Audio\AudioTransitionToScene.cs" />
      <Compile Include="Assets\Scripts\Beach\ClamFadeInOut.cs" />
      <Compile Include="Assets\Scripts\Beach\ClamPuzzle.cs" />
      <Compile Include="Assets\Scripts\Beach\ClamSpot.cs" />
@@ -168,11 +168,11 @@
      <None Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
      <None Include="Assets\Shaders\Hub2dDissolveMaterials\2dDissolve.shader" />
      <None Include="Assets\Shaders\Other\Dissolve.shader" />
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>Q:/Users/LY/Documents/FOT_WORKVERSION/FOT_Version_LY/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>Q:/Users/LY/Documents/FOT_WORKVERSION/FOT_Version_LY/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>Q:/Users/LY/Documents/FOT_WORKVERSION/FOT_Version_LY/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

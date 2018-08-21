@@ -19,7 +19,7 @@ public class AudioManagerMenu : MonoBehaviour
     public FMOD.Studio.EventInstance ResetSnd;
 
 
-    [Header("Music")]
+    [Header("Menu Music")]
     [FMODUnity.EventRef]
     public string MusicEvent;
     public FMOD.Studio.EventInstance SceneMusic;
@@ -52,6 +52,7 @@ public class AudioManagerMenu : MonoBehaviour
     /// ----- TRANSITION TO HUB -----///
     void Transition()
     {
+        Debug.Log("Audio: Transition To Hub Music");
         StopMusicFade(); //stop menu music
         AudioHub.PlayMusic(); //start hub music
     }

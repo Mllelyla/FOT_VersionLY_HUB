@@ -1132,6 +1132,7 @@ GameObject:
   - component: {fileID: 479885619}
   - component: {fileID: 479885618}
   - component: {fileID: 479885617}
+  - component: {fileID: 479885620}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -1153,8 +1154,9 @@ MonoBehaviour:
   BackMenuBtn: {fileID: 1901679803}
   SFXBackButton: event:/SFX/SFX_General/Button
   SFXMapUncover: event:/SFX/SFX_General/MapUncoverFX
-  MusicEvent: event:/Music/Music_Map
+  MusicEvent: event:/Music/Hub
   AudioMenu: {fileID: 479885618}
+  AudioTransition: {fileID: 479885620}
 --- !u!114 &479885618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1170,7 +1172,7 @@ MonoBehaviour:
   SFXPlayButton: event:/SFX/SFX_General/Button
   BtnReset: {fileID: 1272692221}
   SFXResetButton: event:/SFX/SFX_General/Button
-  MusicEvent: event:/Music/Music_Menu
+  MusicEvent: event:/Music/Menu
   AudioHub: {fileID: 479885617}
 --- !u!4 &479885619
 Transform:
@@ -1181,9 +1183,77 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 678062004}
+  - {fileID: 1568717686}
+  - {fileID: 502656654}
   m_Father: {fileID: 0}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &479885620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479885616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d5d2ad18c16b04c8752e8fd39173ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioHub: {fileID: 479885617}
+  AudioScene: {fileID: 487990292}
+  SFXTransition: event:/SFX/SFX_General/Button
+  Beach: {fileID: 678062003}
+  Park: {fileID: 502656653}
+  Market: {fileID: 1568717685}
+--- !u!114 &487990292 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114240250035061422, guid: 3f7590356a743604fb777e4025228310,
+    type: 2}
+  m_PrefabInternal: {fileID: 1945841289}
+  m_Script: {fileID: 11500000, guid: c6a18fc8d2822b0489db0165982230d4, type: 3}
+--- !u!1 &502656652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 502656654}
+  - component: {fileID: 502656653}
+  m_Layer: 0
+  m_Name: FromHubToPark
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &502656653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 502656652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0456699e719d9341b354b665a51d086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomBtn: {fileID: 1032129699}
+  MusicEvent: event:/Music/Park
+--- !u!4 &502656654
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 502656652}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 479885619}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &565124147
 GameObject:
@@ -1443,6 +1513,48 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 472513351}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &678062002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 678062004}
+  - component: {fileID: 678062003}
+  m_Layer: 0
+  m_Name: FromHubToBeach
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &678062003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 678062002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0456699e719d9341b354b665a51d086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomBtn: {fileID: 991682265}
+  MusicEvent: event:/Music/Beach
+--- !u!4 &678062004
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 678062002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 479885619}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &693772113
@@ -3121,6 +3233,48 @@ MonoBehaviour:
   fadeDuration: 4
   maxAlpha: 0.8
   minAlpha: 0.2
+--- !u!1 &1568717684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1568717686}
+  - component: {fileID: 1568717685}
+  m_Layer: 0
+  m_Name: FromHubToMarket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1568717685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1568717684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0456699e719d9341b354b665a51d086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomBtn: {fileID: 1213598929}
+  MusicEvent: event:/Music/Market
+--- !u!4 &1568717686
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1568717684}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 479885619}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1583495978
 Prefab:
   m_ObjectHideFlags: 0
