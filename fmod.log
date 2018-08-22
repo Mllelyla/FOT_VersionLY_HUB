@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000000006256D288 isAsync 1 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000000056FB20A8 isAsync 1 updatePeriod 0.02
 [LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
@@ -21,147 +21,6 @@
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
-[LOG] SystemI::createSound                     : filename = FmodAssets\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] SystemI::createSound                     : setdata soundi = 000000004324DF08 : node = 000000005CA14800
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000436968D8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004324DF08
-[LOG] SystemI::createSoundInternal             :     Create name='FmodAssets\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9569120
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005CA14918
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2500
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ravel_MaMerelOye_Map', format=2, channels=2, frequency=48000, lengthbytes=2127072, lengthpcm=8472450, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.257751.
-[LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004324DF08
-[LOG] SoundI::getSubSound                      : sound 000000004324DF08.  Subsound index 0 / 1
-[LOG] SystemI::createSound                     : filename = FmodAssets\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000004324F348 : node = 000000005CA14E90
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000436968D8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004324F348
-[LOG] SystemI::createSoundInternal             :     Create name='FmodAssets\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9569120
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005CA14FA8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9569120
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000779EF5FC
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FFF7D09DA20
-[LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FFF7D09D9F0
-[LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FFF7D09DAF0
-[LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FFF7D09DBB0
-[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 000000005C9CED38
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ravel_MaMerelOye', format=2, channels=2, frequency=48000, lengthbytes=771520, lengthpcm=3167294, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.260406.
-[LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             :     Sample 0/1: name='FOT_SFX_UI_button', format=2, channels=1, frequency=48000, lengthbytes=2912, lengthpcm=65435, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.457441.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004324F348
-[LOG] SoundI::getSubSound                      : sound 000000004324F348.  Subsound index 0 / 1
-[LOG] SoundI::release                          : Ravel_MaMerelOye_Map (000000004324DF08)
-[LOG] SoundI::release                          :     Ravel_MaMerelOye_Map (00000000436A7658)
-[LOG] SoundI::release                          :     Ravel_MaMerelOye_Map (000000004324E0B8)
-[LOG] SystemI::createSound                     : filename = FmodAssets\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000004324E778 : node = 000000005CA13840
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000436968D8.  list count = 0
-[LOG] SystemI::createSound                     : filename = FmodAssets\Desktop/Master Bank.bank : mode 02010082
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004324E778
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     Create name='FmodAssets\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSound                     :     setdata soundi = 000000004324EE38 : node = 000000005CA15520
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSound                     :     add node to async list : head = 00000000436968D8.  list count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9569120
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSound                     :     filename = FmodAssets\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005CA13958
-[LOG] SystemI::createSound                     :     setdata soundi = 000000004324F198 : node = 000000005CA14020
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     :     add node to async list : head = 00000000436968D8.  list count = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     filename = FmodAssets\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 000000004324F6A8 : node = 000000005CA15280
-[LOG] SystemI::createSound                     :     add node to async list : head = 00000000436968D8.  list count = 2
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FOT_Tableau01_FreezeCello', format=2, channels=2, frequency=48000, lengthbytes=1511648, lengthpcm=7472000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.110476.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004324E778
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004324EE38
-[LOG] SystemI::createSoundInternal             :     Create name='FmodAssets\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9569120
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005CA15638
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FOT_Tableau01_FreezeGuit', format=2, channels=2, frequency=48000, lengthbytes=1518016, lengthpcm=7472000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.282089.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004324EE38
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004324F198
-[LOG] SystemI::createSoundInternal             :     Create name='FmodAssets\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9569120
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005CA14138
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FOT_Tableau01_FreezeFlute', format=2, channels=2, frequency=48000, lengthbytes=1732192, lengthpcm=7472000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.109689.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004324F198
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004324F6A8
-[LOG] SystemI::createSoundInternal             :     Create name='FmodAssets\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9569120
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005CA15398
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FOT_Tableau01_FreezeViolons', format=2, channels=2, frequency=48000, lengthbytes=1864288, lengthpcm=7472000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.099803.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004324F6A8
-[LOG] SoundI::getSubSound                      : sound 000000004324E778.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000000004324EE38.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000000004324F198.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000000004324F6A8.  Subsound index 0 / 1
-[LOG] SoundI::release                          : Ravel_MaMerelOye (000000004324F348)
-[LOG] SoundI::release                          :     Ravel_MaMerelOye (00000000436A77F8)
-[LOG] SoundI::release                          :     Ravel_MaMerelOye (000000004324E268)
-[LOG] SoundI::release                          : FOT_Tableau01_FreezeViolons (000000004324F6A8)
-[LOG] SoundI::release                          :     FOT_Tableau01_FreezeViolons (00000000436A7E78)
-[LOG] SoundI::release                          :     FOT_Tableau01_FreezeViolons (000000004324E0B8)
-[LOG] SoundI::release                          : FOT_Tableau01_FreezeFlute (000000004324F198)
-[LOG] SoundI::release                          :     FOT_Tableau01_FreezeFlute (00000000436A7CD8)
-[LOG] SoundI::release                          :     FOT_Tableau01_FreezeFlute (000000004324EAD8)
-[LOG] SoundI::release                          : FOT_Tableau01_FreezeGuit (000000004324EE38)
-[LOG] SoundI::release                          :     FOT_Tableau01_FreezeGuit (00000000436A7B38)
-[LOG] SoundI::release                          :     FOT_Tableau01_FreezeGuit (000000004324DF08)
-[LOG] SoundI::release                          : FOT_Tableau01_FreezeCello (000000004324E778)
-[LOG] SoundI::release                          :     FOT_Tableau01_FreezeCello (00000000436A7658)
-[LOG] SoundI::release                          :     FOT_Tableau01_FreezeCello (000000004324E928)
-[LOG] SoundI::release                          :  (0000000042FBD048)
-[LOG] SoundI::release                          :     FOT_SFX_UI_button (00000000436A7998)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -171,6 +30,4 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.

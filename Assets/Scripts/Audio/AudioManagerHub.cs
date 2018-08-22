@@ -22,6 +22,11 @@ public class AudioManagerHub : MonoBehaviour
     [FMODUnity.EventRef]
     public string MusicEvent;
     public FMOD.Studio.EventInstance SceneMusic;
+    public FMOD.Studio.ParameterInstance SummerHub;
+    public FMOD.Studio.ParameterInstance AutomnHub;
+    public FMOD.Studio.ParameterInstance WinterHub;
+    public FMOD.Studio.ParameterInstance SpringHub;
+
     
     [Header("Transition to Menu")]
     public AudioManagerMenu AudioMenu;
